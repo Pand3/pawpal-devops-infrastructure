@@ -1,20 +1,80 @@
+# =========================
+# Node.js
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =========================
+# Environment / Secrets
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
 # Terraform
+# =========================
 terraform/.terraform/
 terraform/*.tfstate
 terraform/*.tfstate.*
 terraform/*.tfvars
 terraform/*.tfvars.json
 terraform/*.tfplan
+terraform/crash.log
+terraform/crash.*.log
 
-# Environment / secrets
-.env
-.env.*
-!.env.example
+# Keep Terraform lock file
+!terraform/.terraform.lock.hcl
 
-# Node
-node_modules/
-
+# =========================
 # Ansible
+# =========================
 ansible/*.retry
 ansible/.vault_password
 ansible/*.vault
+ansible/azure-inventory.ini
+ansible/local-inventory.ini
+# Environment-specific inventory
+ansible/azure-inventory.ini
+ansible/local-inventory.ini
+
+# =========================
+# SSH / Certificates / Keys
+# =========================
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_rsa.pub
+id_ed25519
+id_ed25519.pub
+
+# =========================
+# Logs
+# =========================
+*.log
+logs/
+
+# =========================
+# Editor files
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Temporary files
+# =========================
+*.tmp
+*.temp
+.cache/
