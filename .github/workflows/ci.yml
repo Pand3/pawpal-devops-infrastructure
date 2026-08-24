@@ -32,6 +32,8 @@ jobs:
         run: terraform init -backend=false
 
       - name: Terraform Validate
+        env:
+          TF_VAR_ssh_public_key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDummyKeyForValidationOnly1234567890 github-actions"
         run: terraform validate
 
   ansible:
