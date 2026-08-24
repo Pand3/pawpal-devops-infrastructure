@@ -69,8 +69,8 @@ resource "azurerm_linux_virtual_machine" "pawpal" {
   resource_group_name = azurerm_resource_group.pawpal.name
   location            = azurerm_resource_group.pawpal.location
   size                = "Standard_B2ts_v2"
-  
-admin_username      = "azureuser"
+
+  admin_username = "azureuser"
 
   network_interface_ids = [
     azurerm_network_interface.pawpal.id
