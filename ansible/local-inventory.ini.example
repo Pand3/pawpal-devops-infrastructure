@@ -1,0 +1,2 @@
+[server]
+pawpal ansible_host=<LOCAL_VM_IP> ansible_user=as
