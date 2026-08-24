@@ -6,6 +6,20 @@ DevOps infrastructure and deployment pipeline for **PawPal**, a pet-minder web a
 
 The goal of this project is to build a production-style infrastructure workflow around the PawPal application while gaining practical experience with cloud infrastructure, automation, networking, containerisation, and CI/CD.
 
+## Related Repository
+
+This repository contains the DevOps infrastructure and deployment configuration for the **PawPal Pet Minder application**.
+
+The application source code is maintained separately:
+
+**Application Repository:** [Pet-Minder-Mobile-App](https://github.com/Pand3/Pet-Minder-App)
+
+The two repositories have separate responsibilities:
+
+- **Pet-Minder-Mobile-App** — application source code, testing, and container image creation.
+- **pawpal-devops-infrastructure** — Azure infrastructure, Terraform, Ansible, networking, security, and deployment automation.
+
+Then your README would roughly start:
 ### Technologies
 
 - **Microsoft Azure** — Cloud infrastructure
